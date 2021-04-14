@@ -1,6 +1,4 @@
-import math
-def solution(n):
-    num = math.sqrt(n)
-    if math.sqrt(n) == int(math.sqrt(n)): # 실수와 정수를 비교
-        return pow(num+1, 2)
-    return -1
+def solution(x):
+    list_x = list(map(int, str(x)))
+    if x%sum(list_x) == 0: return True
+    return False
